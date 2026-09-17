@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+.isometric-cube {
+  width: 22px;
+  height: 22px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(-35.264deg) rotateY(45deg);
+}
+
+.cube-face {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  background-size: cover;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.cube-top {
+  transform: rotateX(90deg) translateZ(11px);
+}
+
+.cube-bottom {
+  transform: rotateX(-90deg) translateZ(11px);
+}
+
+.cube-front {
+  transform: translateZ(11px);
+}
+
+.cube-back {
+  transform: rotateY(180deg) translateZ(11px);
+}
+
+.cube-left {
+  transform: rotateY(-90deg) translateZ(11px);
+}
+
+.cube-right {
+  transform: rotateY(90deg) translateZ(11px);
+}
